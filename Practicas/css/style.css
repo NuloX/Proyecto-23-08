@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoCajatambo {
+  display: flex;
+  align-items: center;
+}
+
+.logoCajatambo img {
+  padding-left: 5px;
+  width: 65px;
+  height: 65px;
+}
+nav.menu li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+}
+nav.menu li a:hover {
+    border-bottom:1px solid red;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 5px;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+}
+
+h1 span {
+  color: #ad3030;
+}
+
+#busqueda {
+  width: 240px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.header li {
+  margin: 0 7px;
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 69px;
+}
+
+.rocas img {
+  display: flex;
+  height: 69px;
+  max-width: 100%;
+  object-fit: none;
+}
+
+.cajatamboTitulo img {
+  max-width: 100%;
+  height: 69px;
+}
+
+.pared {
+  max-width: 100%;
+  height: 450px;
+  background-color: #04724d;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.loUltimo {
+  padding: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  height: 90%;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section1{
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  width: 100%;
+  justify-content: center;
+}
+
+.section2{
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 650px;
+  justify-content: flex-start;
+}
+
+.noticias1 {
+  display: grid;
+  grid-template-areas: 
+  "fechas fechas"
+  "fechas fechas";
+  grid-template-rows: repeat(2,1fr);
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.fechas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 3% 5%;
+  align-items: center;
+}
+
+.fechas span {
+  /* margin-left: 10%; */
+  /* border: solid 1.5px black; */
+  width: 80px;
+  font-size: 20px;
+  height: 80px;
+  padding: 15px 20px 0px 20px;
+  font-weight: 400;
+  background-color: red;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+.turismo{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.imgTu{
+  width: 600px;
+  height: 500px;
+  background-color: #04724d;
+}
+.imgTu2{
+  width: 600px;
+  height: 500px;
+  background-color: #04724d;
+}
+
+.footer{
+  width: 100%;
+  background-color: aqua;
+  padding: 20px 80px;
+}
+
+.final {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.redes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 33%;
+}
+.redes h4 {
+    text-align: center;
+}
+.redes span {
+    text-align: center;
+    padding: 3px 0px;
+}
+ 
+.contenido-Redes{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.menu-mobile img {
+    width: 40px;
+    margin-right: 20px;
+}
+@media (min-width: 450px ){
+.menu-mobile img {
+  display: none;
+}
+}
+@media (max-width: 425px){
+    /*#busqueda{
+        position: absolute;
+        top: -99999px;
+        left: -99999px;
+        opacity: 0;
+    }
+
+    nav{
+        display: none;
+        visibility: hidden;
+    }
+
+    #cabeza{
+        display: block;
+    }*/
+.rocas {
+    display: none;
+}
+.imagenes {
+    grid-template-columns: repeat(1, 1fr);
+}
+.cards {
+    grid-template-columns: repeat(1, 1fr);
+}
+.noticias1 {
+    grid-template-areas:none;
+}
+.turismo {
+    grid-template-columns: repeat(1, 1fr);
+}
+.imgTu img {
+    width: 100%;
+}
+.imgTu {
+    width: 100%;
+}
+nav.menu {
+    display: none;
+}
+.imgTu2{
+display: none ;
+}
+.redes {
+    margin: 20px 10px;
+}
+article.footer {
+    padding: 20px 10px;
+}
+.final {
+    flex-direction: column;
+    align-items: center;
+}
+}
